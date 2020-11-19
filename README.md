@@ -1,2 +1,2 @@
 # Manage_Hostel
-Django based Hotel Management System
+Django based Hostel Management System
