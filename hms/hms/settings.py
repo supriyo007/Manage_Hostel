@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login_section',
+    # 'login_section',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -120,4 +121,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',)
+# AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',)
+
+LOGIN_REDIRECT_URL = "dashboard"
+LOGOUT_REDIRECT_URL = "dashboard"
+EMAIL_HOST = "localhost"
+EMAIL_PORT = 1025
